@@ -44,10 +44,12 @@ html{
 
 body{
     margin: 0;
-    
+
     font-family: "PTSans_R";
     font-size: 14px;
     color: #fff;
+
+    line-height: 20px;
 }
 
 span{
@@ -56,7 +58,7 @@ span{
 
 .container{
     max-width: 940px;
-    
+
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -64,29 +66,29 @@ span{
 /* Header */
 .header{
     position: relative;
-    
+
     width: 100%;
 }
 
 .header::after{
     content: "";
-    
+
     position: absolute;
     left: 0;
     bottom: 0;
-    
+
     width: 100%;
     height: 1px;
-    
+
     background-color: rgba(255, 255, 255, .1);
 }
 
 .header__inner{
     max-width: 960px;
-    
+
     padding: 20px 10px 35px;
     margin: 0 auto;
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,11 +101,11 @@ span{
 
 .logo__title{
     display: inline-block;
-    
+
     font-size: 1rem;
     font-family: "PTSans_B";
     text-transform: uppercase;
-    
+
     margin-left: 20px;
 }
 
@@ -117,9 +119,9 @@ span{
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    
+
     margin-left: 30px;
-    
+
     transition: color .4s linear;
 }
 
@@ -131,13 +133,13 @@ span{
 .intro{
     background: url(img/background_1.png) center no-repeat;
     background-size: cover;
-    
+
     height: 585px;
 }
 
 .intro__info{
     text-align: center;
-    
+
     padding-top: 100px;
 }
 
@@ -153,18 +155,18 @@ span{
 
 .link__more{
     width: 70px;
-    
+
     display: block;
-    
+
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.75rem;
     color: #fff;
-    
+
     margin: 50px auto 0;
-    
+
     border-bottom: 1px solid rgba(1, 1, 1, 0);
-    
+
     transition: border .4s linear;
 }
 
@@ -172,16 +174,60 @@ span{
     border-bottom: 1px solid #fff;
 }
 
+/* Main Features */
+.main__features{
+    height: 330px;
+
+    background-color: #2b2f37;
+
+    padding: 60px 15px;
+}
+
+.main__features__inner{
+    display: flex;
+}
+
+.main__features__item{
+    flex-basis: 33.3333%;
+    text-align: center;
+}
+
+.main__features__title{
+    font-family: "Roboto_B";
+    font-size: 1.15em;
+    text-transform: uppercase;
+
+    margin: 30px 0 10px;
+}
+
+.main__features__text{
+    margin: 0 auto 30px;
+
+    color: #6f798c;
+
+    font-size: 1rem;
+
+    max-width: 250px;
+}
+
+.link__more.red{
+    margin-top: 0;
+
+    color: #e84c3d;
+}
+
+
+
 /* Button */
 .button{
     font-size: 0.75rem;
     color: #fff;
-    
+
     text-decoration: none;
     text-transform: uppercase;
-    
+
     border: 1px solid #e84c3d;
-    
+
     transition: background .4s linear;
 }
 
@@ -196,7 +242,7 @@ span{
 .button.oversize{
     font-size: 1em;
     font-family: "PTSans_B";
-    
+
     padding: 15px 60px;
 }
 
