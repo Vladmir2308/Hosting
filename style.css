@@ -143,14 +143,10 @@ span{
     padding-top: 100px;
 }
 
-.intro__title{
-    font-size: 2.86em;
-    font-family: "Roboto_T";
-    font-weight: 400;
-}
-
 .intro__text{
-    margin: 30px 0 70px;
+    width: 100%;
+    max-width: 490px;
+    margin: 0 auto;
 }
 
 .link__more{
@@ -207,7 +203,7 @@ span{
 
     font-size: 1rem;
 
-    max-width: 250px;
+    max-width: 265px;
 }
 
 .link__more.red{
@@ -216,7 +212,109 @@ span{
     color: #e84c3d;
 }
 
+/* Search */
+.search{
+    height: 425px;
+}
 
+.search__inner{
+    width: 100%;
+    max-width: 660px;
+    
+    margin: 0 auto;
+    
+    text-align: center;
+    
+    padding: 40px 0 60px;
+}
+
+.search__text{
+    width: 100%;
+    max-width: 600px;
+    
+    margin: 0 auto;
+}
+
+.search__features{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search__item{
+    display: flex;
+    color: #000;
+}
+
+.search__item__description{
+    max-width: 220px;
+    margin-left: 30px;
+}
+
+.search__item__title{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.search__item__text{
+    color: #5e5e5e;
+    font-weight: 700;
+}
+
+/* Title */
+.title{
+    font-size: 2.86em;
+    font-family: "Roboto_L";
+    color: #000;
+    font-weight: 400;
+}
+
+.title--thin{
+    font-family: "Roboto_T";
+    color: #fff;
+    font-weight: 400;
+}
+
+.title--white{
+    color: #fff;
+}
+
+/* Text */
+.text{
+    margin: 30px 0 40px;
+    
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.text--white{
+    color: #fff;
+}
+
+/* Form */
+.form{
+    display: flex;
+    
+    width: 100%;
+    max-width: 640px;
+    
+    margin: 0 auto;
+    padding: 10px;
+    
+    background: url(img/background_search.png) center no-repeat;
+    background-size: cover;
+}
+
+.search__input{
+    padding: 20px 15px 15px;
+    
+    width: 100%;
+    max-width: 480px;
+    
+    display: inline-block;
+    
+    outline: none;
+}
 
 /* Button */
 .button{
@@ -244,6 +342,16 @@ span{
     font-family: "PTSans_B";
 
     padding: 15px 60px;
+}
+
+.button--search{
+    display: inline-block;
+    
+    padding: 0 29px;
+    
+    background-color: #fff0;
+    
+    cursor: pointer;
 }
 
 
