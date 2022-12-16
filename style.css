@@ -304,6 +304,7 @@ body{
     position: relative;
 
     border: 1px solid #bebebe;
+    border-right: none;
 
     color: #000;
     line-height: 2;
@@ -311,6 +312,10 @@ body{
     min-width: 260px;
 
     padding: 20px;
+}
+
+.plan__card:last-child{
+    border-right: 1px solid #bebebe;
 }
 
 .plan__card:hover .button--card{
@@ -470,7 +475,240 @@ body{
     color: #5e5e5e;
 }
 
+/* Blog */
+.blog{
+    height: auto;
+    
+    padding: 50px 0;
+    
+    color: #000;
+}
 
+.blog__inner{
+    width: 100%;
+    max-width: 820px;
+    
+    padding: 0 20px;
+    margin: 0 auto 35px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.blog__item{
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    
+    margin-top: 30px;
+}
+
+.blog__content{
+    margin-right: 40px;
+    height: auto;
+}
+
+.blog__title{
+    font-family: "Roboto_R";
+    font-size: 1.125rem;
+}
+
+.blog__info{
+    display: flex; 
+    justify-content: space-between;
+    
+    max-width: 240px;
+    
+    margin: 20px 0;
+    
+    font-size: 0.75rem;
+}
+
+.blog__data{
+    color: #5e5e5e;
+}
+
+.blog__icon{
+    display: inline-block;
+}
+
+.likes__count{
+    display: inline-block;
+}
+
+.block__text{
+    display: inline-block;
+    
+    position: relative;
+}
+
+.link__more.red.block{
+    position: absolute;
+    left: 75px;
+    bottom: -2px;
+    
+    text-transform: none;
+    font-size: 0.80rem;
+    
+    width: 58px;
+}
+
+.link__more.red.block:hover{
+    text-decoration: underline;
+}
+
+
+/* Location */
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 550px;
+    
+    background: url(img/background_2.png) center no-repeat;
+    background-size: cover;
+    
+    color: #000;
+}
+
+.location__content{
+    max-width: 460px;
+    margin: 0 auto;
+    
+    padding: 0 20px;
+}
+
+.location__title{    
+    width: 300px;
+    font-size: 1.875rem;
+    line-height: 1;
+}
+
+.location__street{
+    font-size: 18px;
+    
+    margin: 30px 0 50px;
+}
+
+.location__days{
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.location__number_1, .location__number_2{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+    
+    display: inline-block;   
+}
+
+.location__number_1:hover, .location__number_2:hover{
+    text-decoration: underline;
+}
+
+.location__email{
+    font-size: 1rem;
+    color: #e84c3d;
+    
+    margin-left: 30px;
+    
+    text-decoration: none;
+}
+
+.location__email:hover{
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer{
+    padding: 12px 0;
+    
+    color: #fff;
+    
+    background-color: #2c3039;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__text{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.social__icon{
+    margin-right: 35px;
+}
+
+.social__icon:last-child{
+    margin: 0;
+}
+
+/* Copy */
+.copy{ 
+    color: #000;
+}
+
+.copy__inner{
+    padding: 20px 0;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy__column{
+    display: flex;
+    flex-direction: column;
+}
+
+.column__title{
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.column__text{
+    font-size: 12px;
+    color: #5e5e5e;
+    
+    margin-top: 10px;
+}
+
+.copy__number{
+    font-weight: 700;
+    font-size: 18px;
+    
+    text-decoration: none;
+    color: #000;
+}
+
+.copy__number:hover{
+    text-decoration: underline;
+}
+
+.copy__email{
+    font-size: 14px;
+    color: #e84c3d;
+    
+    margin: 4px 0 20px;
+    
+    text-decoration: none;
+}
+
+.copy__email:hover{
+    text-decoration: underline;
+}
+
+.copy__copyright{
+    font-size: 12px;
+    color: #2c3039;
+}
 
 
 /* Title */
@@ -530,6 +768,31 @@ body{
     outline: none;
 }
 
+.footer__form{
+    display: flex;
+    
+    align-items: center;
+}
+
+.footer__text--form{
+    margin-right: 15px;
+}
+
+.input__footer{
+    font-size: 14px;
+    
+    width: 300px;
+    max-width: 300px;
+    
+    padding: 10px 20px;
+    
+    outline: none;
+}
+
+.input__footer::placeholder{
+    color: rgba(0, 0, 0, .4);
+    font-size: 14px;
+}
 /* Button */
 .button{
     font-size: 0.75rem;
@@ -559,8 +822,6 @@ body{
 }
 
 .button--search{
-    display: inline-block;
-
     padding: 0 29px;
 
     background-color: #fff0;
@@ -581,7 +842,21 @@ body{
     border: 0;
 }
 
+.button--fixsize{
+    width: 220px;
+    
+    margin: 0 auto;
+}
 
+.button--footer{
+    display: block;
+    
+    background-color: transparent;
+    
+    padding: 12px;
+    
+    cursor: pointer;
+}
 
 
 
