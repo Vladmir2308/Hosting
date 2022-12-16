@@ -2,27 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>Hosting</title>
+    
     <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
 </head>
 <body>
 
 <!-- Intro -->
-<div class="intro">
-    <header class="header">
+<div class="intro"  id="intro">
+    <header class="header" id="header">
         <div class="header__inner">
             <div class="header__logo">
                 <img class="logo" src="img/logo.png" alt="#">
                 <div class="logo__title">nine cloud <span class="text--red"> hosting</span></div>
             </div>
 
+            <a class="burger" href="#"> </a>
+            
             <nav class="nav">
-                <a class="nav__link" href="#">hosting</a>
-                <a class="nav__link" href="#">domains</a>
-                <a class="nav__link" href="#">features</a>
-                <a class="nav__link" href="#">testimonials</a>
-                <a class="nav__link" href="#">contacts</a>
+                <a class="nav__link" href="#" data-scroll="#hosting">hosting</a>
+                <a class="nav__link" href="#" data-scroll="#domains">domains</a>
+                <a class="nav__link" href="#" data-scroll="#features">features</a>
+                <a class="nav__link" href="#" data-scroll="#testimonials">testimonials</a>
+                <a class="nav__link" href="#" data-scroll="#contacts">contacts</a>
             </nav>
+            
 
             <a class="button login" href="#">login</a>
         </div>
@@ -36,9 +44,9 @@
                 <h2 class="text text--white">Web hosting for $9.95/mo $2.95/mo. Sign up today and also get a free 1-on-1 consultation to help you get started.</h2>
             </div>
 
-            <a class="button oversize" href="#">get started</a>
+            <a class="button oversize" href="#" target="_blank">get started</a>
 
-            <a class="link__more" href="#">learn more</a>
+            <a class="link__more" href="#" target="_blank">learn more</a>
         </div>
     </div>
 </div> <!-- /intro -->
@@ -56,7 +64,7 @@
                 <div class="main__features__text">Disk space in all packages has been increased by ten times!
                 </div>
 
-                <a class="link__more red" href="#">read more</a>
+                <a class="link__more red" href="#" target="_blank">read more</a>
             </div> <!-- features 1 -->
 
             <div class="main__features__item">
@@ -68,7 +76,7 @@
                 <div class="main__features__text">Leave the set up, management and monitoring to us.
                 </div>
 
-                <a class="link__more red" href="#">read more</a>
+                <a class="link__more red" href="#" target="_blank">read more</a>
             </div> <!-- features 2 -->
 
             <div class="main__features__item">
@@ -80,14 +88,14 @@
                 <div class="main__features__text">Reliable, high- performance cloud that meets your changing business demands.
                 </div>
 
-                <a class="link__more red" href="#">read more</a>
+                <a class="link__more red" href="#" target="_blank">read more</a>
             </div> <!-- features 3 -->
         </div> <!-- /main__features__inner -->
     </div> <!-- /container -->
 </div> <!-- /main__features -->
 
 <!-- Search -->
-<div class="search">
+<div class="search" id="domains">
     <div class="container">
         <div class="search__inner">
             <h1 class="title">Search Domain</h1>
@@ -148,7 +156,7 @@
 </div> <!-- /search -->
 
 <!-- Features -->
-<div class="features">
+<div class="features" id="features">
     <div class="container">
         <div class="title title--white">
             Features
@@ -233,7 +241,7 @@
 </div> <!-- /features -->
 
 <!--Plan-->
-<div class="plan">
+<div class="plan" id="hosting">
     <div class="container">
 
         <h1 class="title">Pick your plan</h1>
@@ -252,7 +260,7 @@
                     <div class="card__text"><span class="text--bold">10</span> parked domains</div>
                     <div class="card__text"><span class="text--bold">25 FTP</span> accounts</div>
 
-                    <a class="button button--card" href="#">order now</a>
+                    <a class="button button--card" href="#" target="_blank">order now</a>
             </div> <!-- card 1 -->
 
             <div class="plan__card">
@@ -267,7 +275,7 @@
                     <div class="card__text"><span class="text--bold">10</span> parked domains</div>
                     <div class="card__text"><span class="text--bold">25 FTP</span> accounts</div>
 
-                    <a class="button button--card" href="#">order now</a>
+                    <a class="button button--card" href="#" target="_blank">order now</a>
             </div> <!-- card 2 -->
 
             <div class="plan__card">
@@ -282,7 +290,7 @@
                     <div class="card__text"><span class="text--bold">10</span> parked domains</div>
                     <div class="card__text"><span class="text--bold">25 FTP</span> accounts</div>
 
-                    <a class="button button--card" href="#">order now</a>
+                    <a class="button button--card" href="#" target="_blank">order now</a>
             </div> <!-- card 3 -->
         </div> <!-- /plan__inner -->
 
@@ -293,7 +301,7 @@
 </div> <!-- /plan -->
 
 <!-- Testimonials -->
-<div class="testimonials">
+<div class="testimonials" id="testimonials">
     <div class="container">
         <div class="testimonials__inner">
             <h1 class="title">Testimonials</h1>
@@ -393,12 +401,12 @@
             </div> <!-- blog__item 3 -->
         </div> <!-- /blog__inner -->
 
-        <a class="button button--card button--fixsize" href="#">show more</a>
+        <a class="button button--card button--fixsize" href="#" target="_blank">show more</a>
     </div> <!-- /container -->
 </div> <!-- /blog -->
 
 <!-- Location -->
-<div class="location">
+<div class="location" id="contacts">
     <div class="location__content">
         <div class="location__title">We are interested in long-term cooperation</div>
 
@@ -436,11 +444,10 @@
                    <img src="img/social_4.png" alt="#">
                 </a>
             </div>
-            
-            
+
             <form class="footer__form" action="#" method="post">
                 <div class="footer__text footer__text--form">subscribe</div>
-                
+
                 <input class="input__footer" type="email" name="email" placeholder="Enter your e-mail here">
                 <button type="submit" class="button button--footer">send</button>
             </form>
@@ -471,7 +478,7 @@
                 
                 <div class="column__text">Reseller Hosting</div>
                 
-                <div class="column__text">Reseller Hosting</div>
+                <div class="column__text">Cloud Managed VPS</div>
                 
                 <div class="column__text">Dedicated Servers</div>
             </div> <!-- column 2 -->
@@ -481,7 +488,7 @@
                 
                 <div class="column__text">Knowledge Base</div>
                 
-                <div class="column__text">Knowledge Base</div>
+                <div class="column__text">Support Request</div>
                 
                 <div class="column__text">Client Area</div>
             </div> <!-- column 3 -->
@@ -489,9 +496,9 @@
             <div class="copy__column">
                 <div class="column__title">Legal Terms</div>
                 
-                <div class="column__text">Legal Terms</div>
+                <div class="column__text">Terms of Use</div>
                 
-                <div class="column__text">Legal Terms</div>
+                <div class="column__text">Privacy Policy</div>
             </div> <!-- column 4 -->
             
             <div class="copy__column">
@@ -504,6 +511,7 @@
     </div> <!-- /container -->
 </div> <!-- /copy -->
 
+<script src="app.js"></script>
 
 </body>
 </html>
